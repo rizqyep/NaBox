@@ -17,7 +17,7 @@ include("../koneksi.php");
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
     <link rel="stylesheet" href="css/main.css">
 
-    <title>NaBox - Calculator</title>
+    <title>NaBox - Kalkulator Pintar</title>
     <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
 
 </head>
@@ -34,7 +34,7 @@ include("../koneksi.php");
                         $owner = $_SESSION['user']['nama_toko'];
                         $ambil = $koneksi->query("SELECT * FROM barang WHERE pemilik = '$owner'");
                         while ($isi = $ambil->fetch_assoc()) { ?>
-                            <option value="<?php echo $isi['nama']; ?>"><?php echo $isi['nama']; ?></option>
+                            <option value="<?php echo $isi['nama']; ?>"><?php echo $isi['nama']; ?> - Stok <?php echo $isi['stok']; ?> </option>
                         <?php } ?>
                     </select>
                 </div>
@@ -63,8 +63,9 @@ include("../koneksi.php");
                     <h2>Total : <span id="showtotal"></span></h2>
                 </div>
             </div>
-
-            <button class="ui big yellow button" id="bayar" type="submit">Bayar</button>
+            <div class="bayar" style="margin-top : 15vh">
+                <button class="ui big yellow button" id="bayar" type="submit">Bayar</button>
+            </div>
         </center>
     </div>
     <script>
