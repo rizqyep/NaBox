@@ -50,12 +50,12 @@ include("koneksi.php");
                 <center>
                     <div class="category-box">
                         <center>
-                            <a href="kalkulator.php">
+                            <a href="kalkulator">
                                 <i class="massive calculator icon"></i>
                             </a>
                             <br>
                             <br>
-                            <a href="kalkulator.php">
+                            <a href="kalkulator">
                                 <h3>Kalkulator Pintar</h3>
                             </a> <br>
                             <br>
