@@ -31,13 +31,15 @@ include("../koneksi.php");
         </center>
         <br>
         <br>
-        <a style='border-radius: 0px' href="tambahkategori.php" class="ui right floated blue button">
-            <i class="plus icon"></i>
-            Tambah Kategori
-        </a>
+        <div>
+            <a style='border-radius: 0px' href="tambahkategori.php" class="ui right floated blue button">
+                <i class="plus icon"></i>
+                Tambah Kategori
+            </a>
+        </div>
 
 
-        <div class="ui very relaxed stackable two column grid" style="margin-top : 10%;">
+        <div class="ui very relaxed stackable two column grid" style="margin-top : 7vh;">
             <?php
             $nama = $_SESSION['user']['nama_toko'];
             $ambil = $koneksi->query("SELECT * FROM kategori WHERE pemilik = '$nama'");
