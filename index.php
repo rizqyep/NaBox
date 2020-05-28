@@ -94,12 +94,12 @@ include("koneksi.php");
                 <center>
                     <div class="category-box">
                         <center>
-                            <a href="statistik.php">
+                            <a href="statistik">
                                 <i class="massive chart area icon"></i>
                             </a>
                             <br>
                             <br>
-                            <a href="statistik.php">
+                            <a href="statistik">
                                 <h3>Statistik Penjualan</h3>
                             </a> <br>
                             <br>
