@@ -49,7 +49,7 @@ include("../koneksi.php");
 
         if ($cek == 0) {
             echo "<center>
-            <h1 style ='margin-top:30vh'>Anda Belum Memiliki Barang di Kategori ini!</h1>
+            <h1 style ='margin-top:15vh'>Anda Belum Memiliki Barang di Kategori ini!</h1>
             <a style='border-radius: 0px'class ='ui green button' href ='tambahbarang.php'>Tambah Barang</a>
             </center>";
         } else { ?>
